@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Opcional: Añadir una animación simple al desplazarse para las secciones
     const sections = document.querySelectorAll('.section');
     const options = {
-        threshold: 0.2
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver(function(entries, observer) {
