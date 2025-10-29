@@ -1,127 +1,162 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Portafolio de Desarrollador Marco A.</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Desarrollador Marco A.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <header>
-        <nav>
-            <div class="foto">
-               <img src="avatar.png" alt="Foto de Marco Antonio Muñoz Reyes">
-            </div>
-            <div class="logo">Marco Antonio <br> Muñoz Reyes</div>
-          <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-        </label>              
+  <!-- Header y navegación -->
+  <header>
+    <nav>
+      <div class="foto">
+        <img src="avatar.png" alt="Foto de Marco Antonio Muñoz Reyes" />
+      </div>
+      <div class="logo">Marco Antonio <br />Muñoz Reyes</div>
 
-            <ul class="nav-links">
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Hola, soy Marco A.</h1>
-            <p>Un apasionado Desarrollador Web construyendo cosas increíbles.</p>
-            <a href="#proyectos" class="btn">Ver Mi Trabajo</a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre Mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hola, soy Marco A.</h1>
+      <p>Un apasionado Desarrollador Web construyendo cosas increíbles.</p>
+      <a href="#proyectos" class="btn">Ver Mi Trabajo</a>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2>Sobre Mí</h2>
+      <p>
+        Hola, soy alguien realmente atraído por el código y me siento profundamente curioso por el enigmático y desafiante mundo de la programación. Mi curiosidad me ha impulsado a profundizar en él. Mi objetivo principal es seguir disfrutando de la tecnología y de este vasto conocimiento para crear soluciones e innovaciones extraordinarias.
+      </p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section bg-light">
+    <div class="container">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="https://www.liblogo.com/img-logo/ht431ld17-html-5-logo-logo-html-html5-free-image-on-liblogo.png" alt="HTML5" class="skill-icon" />
+          HTML5
         </div>
-    </section>
-
-    <section id="sobre-mi" class="section">
-        <div class="container">
-            <h2>Sobre Mí</h2>
-            <p> "Hola, soy alguien realmente atraído por el código y me siento profundamente curioso por el enigmático y desafiante mundo de la programación. Mi curiosidad me ha impulsado a profundizar en él. Mi objetivo principal es seguir disfrutando de la tecnología y de este vasto conocimiento para crear soluciones e innovaciones extraordinarias."</p>
+        <div class="skill-item">
+          <img src="https://miro.medium.com/v2/resize:fit:300/1*Aenej4dxqEZ9j7zsI9pSnw.png" alt="CSS3" class="skill-icon" />
+          CSS
         </div>
-    <section id="habilidades" class="section bg-light">
-  <div class="container">
-    <h2>Habilidades</h2>
-    <div class="skills-grid">
-      <div class="skill-item">
-        <img src="https://www.liblogo.com/img-logo/ht431ld17-html-5-logo-logo-html-html5-free-image-on-liblogo.png" alt="HTML5" class="skill-icon">
-        HTML5
-      </div>
-      <div class="skill-item">
-        <img src="https://miro.medium.com/v2/resize:fit:300/1*Aenej4dxqEZ9j7zsI9pSnw.png
-      " alt="CSS3" class="skill-icon"><br>
-      CSS
-      </div>
-      <div class="skill-item">
-        <img src="https://th.bing.com/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="JavaScript" class="skill-icon">
-        JavaScript
-      </div>
-      <div class="skill-item">
-        <img src="https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg" alt="React" class="skill-icon">
-        React
-      </div>
-      <div class="skill-item">
-        <img src="https://th.bing.com/th/id/OIP.pBR1_3mkYRWNctn-Y-U31QHaIW?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Node.js" class="skill-icon">
-        Node.js
-      </div>
-      <div class="skill-item">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.zd4Rhrz9MD7CwtoN9DweIAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Python" class="skill-icon">
-        Python
-      </div>
-      <div class="skill-item">
-        <img src="https://tse2.mm.bing.net/th/id/OIP.BSGskCnfEZKUvzzwbk9kNQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="SQL" class="skill-icon"><br>
-        SQL
+        <div class="skill-item">
+          <img src="https://th.bing.com/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK" alt="JavaScript" class="skill-icon" />
+          JavaScript
+        </div>
+        <div class="skill-item">
+          <img src="https://pluspng.com/img-png/react-logo-png-javascript-logo-react-js-stickers-mugs-t-shirts-and-much-more-880x1136.jpg" alt="React" class="skill-icon" />
+          React
+        </div>
+        <div class="skill-item">
+          <img src="https://th.bing.com/th/id/OIP.pBR1_3mkYRWNctn-Y-U31QHaIW" alt="Node.js" class="skill-icon" />
+          Node.js
+        </div>
+        <div class="skill-item">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.zd4Rhrz9MD7CwtoN9DweIAHaHa" alt="Python" class="skill-icon" />
+          Python
+        </div>
+        <div class="skill-item">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.BSGskCnfEZKUvzzwbk9kNQHaHa" alt="SQL" class="skill-icon" />
+          SQL
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-    <section id="proyectos" class="section">
-        <div class="container">
-            <h2>Mis Proyectos</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Lista de tares</h3>
-                    <p> Propósito del proyecto: Esta aplicación fue diseñada para ayudar a los usuarios a gestionar sus tareas diarias de forma sencilla y visual. Permite agregar, editar, marcar como completadas y eliminar tareas, todo desde una interfaz amigable y responsiva.</p> <p>Problema que resuelve: Muchas personas olvidan sus pendientes o no tienen una forma rápida de organizarlos. Esta app resuelve ese problema al ofrecer una herramienta accesible que guarda las tareas localmente en el navegador, sin necesidad de registro o conexión a internet.</p>
-                   <p>Características clave:Persistencia de datos con localStorage.Edición en línea de tareas con validación.Interfaz visual clara con estilos personalizados en CSS.Interacción fluida mediante eventos como keypress y DOMContentLoaded.</p>
-                    <p class="technologies">Tecnologías: HTML, CSS, JavaScript</p>
-                    <a href="https://tonoreyes.github.io/lista-de-tareas-js/" target="_blank" class="project-link">Repositorio GitHub</a>
-                    
-                </div>
-                <div class="project-card">
-                    <h3>El clima de tu ciudad</h3>
-                    <p>Propósito del proyecto:Crear una aplicación web interactiva que permita consultar el clima actual de cualquier ciudad, integrando diseño y persistencia de datos </p><p>Problema que resuelve: Esta app ofrece una experiencia ligera y directa para consultar el clima. Permite guardar la última ciudad buscada para facilitar futuras consultas. Presenta la información de forma clara, y accesible desde cualquier navegador.</p><p>Características clave: Búsqueda por ciudad, Consulta a API de OpenWeather, Manejo de errores, Guarda la última ciudad para mostrarla al iniciar y Mensajes de error si la ciudad no se encuentra </p>
-                    <p class="technologies">Tecnologías: React, Vite, Libreria gh-pages y APIs</p>
-                    <a href=" https://tonoreyes.github.io/el-clima-app/" target="_blank" class="project-link">Repositorio GitHub</a>
-                    </div>
-                </div>
+  <!-- Proyectos -->
+  <section id="proyectos" class="section">
+    <div class="container">
+      <h2>Mis Proyectos</h2>
+      <div class="project-grid">
+        <!-- Proyecto 1 -->
+        <div class="project-card">
+          <h3>Lista de Tareas</h3>
+          <p><strong>Propósito:</strong> Ayudar a los usuarios a gestionar sus tareas diarias de forma sencilla y visual.</p>
+          <p><strong>Problema:</strong> Ofrece una herramienta accesible que guarda tareas localmente sin conexión ni registro.</p>
+          <p><strong>Características:</strong> localStorage, edición en línea, interfaz clara, eventos DOM.</p>
+          <p class="technologies">Tecnologías: HTML, CSS, JavaScript</p>
+          <a href="https://tonoreyes.github.io/lista-de-tareas-js/" target="_blank" class="project-link">Ver proyecto</a>
         </div>
-    </section>
 
-    <section id="contacto" class="section bg-light">
-        <div class="container">
-            <h2>Contáctame</h2>
-            <p>¡Estoy abierto a nuevas oportunidades y colaboraciones!</p>
-            <p>No dudes en contactarme por correo electrónico o conectarte conmigo en LinkedIn.</p>
-            <p>Correo Electrónico: <a href="mailto:tonoreyes2507@outlook.com">tonoreyes2507@outlook.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil/" target="_blank">linkedin.com/in/tuperfil</a></p>
-            </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Marco Antonio Muñoz Reyes. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
-                <a href="https://twitter.com/tutwitter" target="_blank">X</a>
-                </div>
+        <!-- Proyecto 2 -->
+        <div class="project-card">
+          <h3>Buscador de Películas</h3>
+          <p><strong>Propósito:</strong> Buscar películas usando la API de TMDb con una interfaz intuitiva.</p>
+          <p><strong>Problema:</strong> Evita sitios complejos y ofrece resultados dinámicos sin registro.</p>
+          <p><strong>Características:</strong> React + TMDb, tarjetas animadas, diseño responsivo, manejo de estados.</p>
+          <p class="technologies">Tecnologías: React, Vite, CSS, TMDb API</p>
+          <a href="https://tonoreyes.github.io/buscador-peliculas-react/" target="_blank" class="project-link">Ver proyecto</a>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Proyecto 3 -->
+        <div class="project-card">
+          <h3>Salón Beauty Glam</h3>
+          <p><strong>Propósito:</strong> Mostrar servicios de belleza de forma profesional y atractiva.</p>
+          <p><strong>Problema:</strong> Mejora la presencia digital de salones con diseño moderno y contacto directo.</p>
+          <p><strong>Características:</strong> Diseño elegante, WhatsApp integrado, distribución clara, responsivo.</p>
+          <p class="technologies">Tecnologías: HTML, CSS, JavaScript</p>
+          <a href="https://tonoreyes.github.io/glam/" target="_blank" class="project-link">Ver proyecto</a>
+        </div>
+
+        <!-- Proyecto 4 -->
+        <div class="project-card">
+          <h3>El Clima de tu Ciudad</h3>
+          <p><strong>Propósito:</strong> Consultar el clima actual de cualquier ciudad con persistencia de datos.</p>
+          <p><strong>Problema:</strong> Consulta ligera y clara, guarda la última ciudad buscada.</p>
+          <p><strong>Características:</strong> API OpenWeather, manejo de errores, persistencia local.</p>
+          <p class="technologies">Tecnologías: React, Vite, gh-pages, API</p>
+          <a href="https://tonoreyes.github.io/el-clima-app/" target="_blank" class="project-link">Ver proyecto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section bg-light">
+    <div class="container">
+      <h2>Contáctame</h2>
+      <p>¡Estoy abierto a nuevas oportunidades y colaboraciones!</p>
+      <p>Correo Electrónico: <a href="mailto:tonoreyes2507@outlook.com">tonoreyes2507@outlook.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil/" target="_blank">linkedin.com/in/tuperfil</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Marco Antonio Muñoz Reyes. Todos los derechos reservados.</p>
+      <div class="social-links">
+        <a href="https://github.com/tuusuario" target="_blank">GitHub</a>
+        <a href="https://twitter.com/tutwitter" target="_blank">X</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
