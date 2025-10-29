@@ -1,3 +1,26 @@
+/* Estilos del icono de la hamburguesa (oculto por defecto) */
+.menu-icon {
+    display: none; /* Oculto en escritorio */
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001; /* Asegura que esté por encima del menú */
+}
+
+.line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff; /* Las líneas de la hamburguesa serán blancas */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Ocultar el checkbox completamente */
+#menu-toggle {
+    display: none;
+}
+
+
 /* Restablecimiento Básico y Estilos Globales */
 * {
     margin: 0;
@@ -267,5 +290,68 @@ footer {
     .project-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Diseño Responsivo - Móvil (A partir de tu código existente) */
+@media (max-width: 768px) {
+    /* Mostrar el ícono de hamburguesa */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Ajuste de la navegación para la versión móvil */
+    header nav {
+        flex-direction: row; /* Mantener la foto/logo y la hamburguesa en la misma línea */
+        justify-content: space-between; /* Espaciar logo y hamburguesa */
+        align-items: center;
+    }
+
+    /* Ocultar la lista de enlaces por defecto */
+    .nav-links {
+        position: fixed;
+        top: 60px; /* Debajo del header fijo */
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #333; /* Fondo oscuro */
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 20px;
+        margin-top: 0;
+        /* Estilos clave para ocultar y animar */
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* **FUNCIONALIDAD HAMBURGUESA:** Mostrar el menú cuando el checkbox está 'checked' */
+    #menu-toggle:checked ~ .nav-links {
+        transform: translateX(0); /* Deslizar el menú a la vista */
+    }
+
+    /* **ANIMACIÓN X** Transformar las líneas del icono al abrir */
+    #menu-toggle:checked ~ .menu-icon .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #menu-toggle:checked ~ .menu-icon .line:nth-child(2) {
+        opacity: 0; /* Ocultar la línea central */
+    }
+
+    #menu-toggle:checked ~ .menu-icon .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    /* El resto de tus estilos responsivos */
+    .hero-content h1 {
+        font-size: 3em;
+    }
+    /* ... otros estilos responsivos ... */
 }
 

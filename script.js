@@ -39,3 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 });
+
+// Cierre automático del menú al hacer clic en un enlace (para móviles)
+const menuToggle = document.getElementById('menu-toggle');
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', function() {
+        if (menuToggle.checked) {
+            menuToggle.checked = false; // Desmarca el checkbox para cerrar el menú
+        }
+    });
+});
