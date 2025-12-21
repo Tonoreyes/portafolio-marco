@@ -19,7 +19,7 @@
       </div>
 
       <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
@@ -131,14 +131,35 @@
   </section>
 
   <section id="contacto" class="section bg-light">
-    <div class="container">
-      <h2>Contáctame</h2>
-      <p>¡Estoy abierto a nuevas oportunidades y colaboraciones!</p>
-      <p>También agradecería sus opiniones y consejos, ¡muchas gracias!</p>
-      <p>Correo Electrónico: <a href="mailto:tonoreyes2507@outlook.com">tonoreyes2507@outlook.com</a></p>
-      <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/tuperfil/" target="_blank">linkedin.com/in/tuperfil</a></p> -->
-    </div>
-  </section>
+  <div class="container">
+    <h2>Contáctame</h2>
+    <p>¡Estoy abierto a nuevas oportunidades y colaboraciones!</p>
+    
+    <div class="contact-wrapper">
+      <form id="contact-form" action="https://formspree.io/f/xojawedn" method="POST" class="contact-form">
+        
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="name" id="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" name="email" id="email" placeholder="tu@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="message" id="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+        </div>
+
+        <button type="submit" id="form-button" class="btn">Enviar Mensaje</button>
+        
+        <p id="form-status"></p> 
+
+      </form> </div>
+  </div>
+</section>
 
   <footer>
     <div class="container">

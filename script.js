@@ -49,3 +49,47 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+
+const form = document.getElementById("contact-form");
+const status = document.getElementById("form-status");
+const button = document.getElementById("form-button");
+
+form.addEventListener("submit", async function(event) {
+    event.preventDefault(); // Evita que la página se recargue
+    
+    const data = new FormData(event.target);
+    
+    // Cambiamos el estado del botón mientras envía
+    button.disabled = true;
+    button.textContent = "Enviando...";
+
+    try {
+        const response = await fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            // ÉXITO
+            status.innerHTML = "¡Gracias! Tu mensaje ha sido enviado correctamente.";
+            status.style.color = "#28a745"; // Verde éxito
+            form.reset(); // Limpia el formulario
+        } else {
+            // ERROR DEL SERVIDOR
+            const errorData = await response.json();
+            status.innerHTML = "Oops! Hubo un problema. Inténtalo de nuevo.";
+            status.style.color = "#dc3545"; // Rojo error
+        }
+    } catch (error) {
+        // ERROR DE RED
+        status.innerHTML = "Error de conexión. Revisa tu internet.";
+        status.style.color = "#dc3545";
+    } finally {
+        // Restauramos el botón
+        button.disabled = false;
+        button.textContent = "Enviar Mensaje";
+    }
+});
